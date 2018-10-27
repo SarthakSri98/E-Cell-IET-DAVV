@@ -1,0 +1,9 @@
+<button mat-raised-button (click)="backToStuff()" class="backToStuff" color="primary"><i class="fa fa-chevron-left"></i>&nbsp;Back to stuffs</button>
+
+<div class="eventsSection mat-typography">
+  <div class="card" *ngFor="let blog of blogList">
+     <img [src]="blog.img">
+     <p class="mat-title">{{blog.eventName}}</p>
+     <p class="mat-subheading-1">{{ blog.description }}</p>
+  </div>
+  </div>

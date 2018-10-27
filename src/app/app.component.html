@@ -1,20 +1,39 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<div id="st-container" class="st-container">
+
+    
+        <nav class="st-menu st-effect-5" id="menu-5">
+          <h2 class="sideHeading">E-CELL</h2>
+          <ul>
+            <li><a  routerLink="/"><i class="fa fa-home"></i>&nbsp;Home</a></li>
+            <li><a  href="#about"><i class="fa fa-question"></i>&nbsp;About</a></li>
+            <li><a  routerLink="events"><i class="fa fa-superpowers"></i>&nbsp;Events</a></li>
+            <li><a  routerLink="gallery"><i class="fa fa-image"></i>&nbsp;Gallery</a></li>
+            <li><a  routerLink="stuffs"><i class="fa fa-image"></i>&nbsp;College Things</a></li>
+            <li><a  routerLink="team"><i class="fa fa-users"></i>&nbsp;Team</a></li>
+            <li><a  href="#contact"><i class="fa fa-phone"></i>&nbsp;Contact</a></li>
+          </ul>
+        </nav>
+      
+        
+        <div class="st-pusher">
+          <div class="st-content">
+            <!-- this is the wrapper for the content -->
+            <div class="st-content-inner">
+              <!-- extra div for emulating position:fixed of the menu -->
+              <!-- Top Navigation -->
+              <div class="main clearfix">
+                <div id="st-trigger-effects" class="column">
+                      <button class="sidenav-button" id="nav-icon1" data-effect="st-effect-5">
+                          <span data-effect="st-effect-5"></span>
+                          <span data-effect="st-effect-5"></span>
+                          <span data-effect="st-effect-5"></span>
+                      </button>
+                </div>
+                
+              </div>
+              <router-outlet (activate)="changeOfRoute()" ></router-outlet>
+            </div>
+          </div>
+        </div>
+      </div>

@@ -1,0 +1,9 @@
+
+<h1>OUR EVENTS</h1>
+<div class="eventsSection mat-typography">
+<div class="card" *ngFor="let event of eventList">
+   <img [src]="event.img">
+   <p class="mat-title">{{event.eventName}}</p>
+   <p class="mat-subheading-1">{{ event.description }}</p>
+</div>
+</div>

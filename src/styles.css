@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    /* background-image: url('./images/wallpaper1.JPG');
+    background-image: url('./images/wallpaper1.JPG'), linear-gradient(#eb01a5, #d13531);
+    background-attachment: fixed; */
+    /* background: #FF416C;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #FF4B2B, #FF416C); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+        background-size: 100%;
+    z-index: 1;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

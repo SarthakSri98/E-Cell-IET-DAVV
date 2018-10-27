@@ -1,0 +1,51 @@
+.eventsSection{
+  margin-left:19%;
+}
+.card{
+  margin-top:-126px;
+  height: 400px;
+  width:500px;
+  background-color: rgb(252, 249, 249);
+  float:left;
+  box-shadow: 5px 5px 10px rgb(77, 44, 44);
+  margin-right: 10%;
+}
+h1{
+text-align: center;
+    font-family: montserrat-bold,sans-serif;
+    font-size: .6 rem;
+    color: #220505;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    position: relative;
+    bottom:283px;
+}
+img{
+  width:460px;
+  height: 300px;
+  margin:20px;
+  margin-bottom: 0;
+}
+p{
+  margin:20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 25em) {
+  .card{
+    margin-top: 27%;
+    height: 393px;
+    width: 342px;
+    background-color: rgb(252, 249, 249);
+    float: left;
+    box-shadow: 5px 5px 10px rgb(77, 44, 44);
+    margin-right: 10%;
+  }
+  img{
+    width: 295px;
+    height: 271px;
+  }
+  .eventsSection{
+    margin-left: 8%;
+  }
+}
