@@ -50,6 +50,8 @@ import { StuffsComponent } from './stuffs/stuffs.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { GithubProfilesComponent } from './github-profiles/github-profiles.component';
 import { CompetitiveComponent } from './competitive/competitive.component';
+import { FooterComponent } from './footer/footer.component';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 @NgModule({
   declarations: [
@@ -61,7 +63,8 @@ import { CompetitiveComponent } from './competitive/competitive.component';
     StuffsComponent,
     BlogsComponent,
     GithubProfilesComponent,
-    CompetitiveComponent
+    CompetitiveComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -101,7 +104,9 @@ import { CompetitiveComponent } from './competitive/competitive.component';
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatTreeModule,  ],
+    MatTreeModule,
+    AnimateOnScrollModule.forRoot()
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

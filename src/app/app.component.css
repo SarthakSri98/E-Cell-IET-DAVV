@@ -4,8 +4,8 @@
     cursor: pointer;
 }
 .sidenav-button{
-    position: absolute;
-    left:-105%;
+    position: fixed!important;
+    left: 2%;
     background-color:transparent;
     outline:none;
 	z-index: 100000;
@@ -352,8 +352,14 @@ button:hover {
 	font-weight: 700;
 	font-size: 0.9em;
 }
+.footer{
+	background-color: rgb(17, 12, 37);
+	height:460px;
+	width:100%;
+}
 
 @media screen and (max-width: 46.0625em) {
+
 	.column {
 		width: 100%;
 		min-width: auto;
@@ -362,9 +368,9 @@ button:hover {
 		text-align: center;
 	}
     .sidenav-button{
-		position: absolute;
-		left:0px;
-	}
+		top: 0px;
+		position: fixed !important;
+		left: 5%!important;	}
 	.column p {
 		font-size: 1.5em;
 	}
@@ -373,7 +379,9 @@ button:hover {
 		text-align: center;
 		box-shadow: 0 -1px 0 rgba(0,0,0,0.1);
     }
-    
+    .footer-bottom{
+		font-size: 1.5rem;
+	}
 }
 
 @media screen and (max-width: 25em) {

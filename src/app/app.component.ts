@@ -11,14 +11,10 @@ export class AppComponent implements OnInit {
   title = 'ecell-ietdavv';
   effect:any
   
+constructor( private router : ActivatedRoute ){}
+route =  this.router.outlet;
 ngOnInit()
 {
-
-    document.getElementById('nav-icon1').addEventListener('click',function(){
-      document.getElementById('nav-icon1').classList.toggle('open');
-    });
-  
-
 var click = document.querySelectorAll('div button');
 var pusher = document.querySelector('.st-pusher');
 var sideBar = document.querySelector('.st-menu');
@@ -26,11 +22,10 @@ var sideBar = document.querySelector('.st-menu');
 
 // adding a click event to all the buttons
 for (var i = 0; i < click.length; i++) {
-  click[i].addEventListener('click', this.addClass)
+  click[i].addEventListener('click', this.addClass);
 }
 
-pusher.addEventListener('click', this.closeMenu);
-sideBar.addEventListener('click',this.closeMenu);
+
 this.changeOfRoute();
 
 
@@ -38,7 +33,7 @@ this.changeOfRoute();
 
  addClass(e) {
     let menu = document.querySelector('#st-container');
-    
+    document.getElementById('nav-icon1').classList.toggle('open');
     // to get the correct effect
     this.effect = e.target.getAttribute('data-effect');
     localStorage.setItem('effect',this.effect);

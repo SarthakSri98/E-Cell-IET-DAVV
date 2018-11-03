@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:700');
-
 *, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
 .clearfix:before, .clearfix:after { display: table; content: ''; }
 .clearfix:after { clear: both; }
@@ -67,9 +66,11 @@ section {
 } */
 .heading{
 	text-align: center;
+	padding-top: 44px;
     font-family: montserrat-bold,sans-serif;
 	position: relative;
 	bottom:2px;
+	left:13px;
     text-transform: uppercase;
 	letter-spacing: .3rem;
 	
@@ -84,18 +85,34 @@ section {
 	list-style: none;
 	text-align: center;
 }
+
 .row{
     position: relative;
 	bottom: -19px;
-	left:9%;
+	left:8.1%;
 
+}
+p.name{
+	display: inline-block;
+    position: relative;
+    padding: 7px;
+    height: 32px;
+    width: 100%;
+	bottom: 232px;
+    font-size: 16px!important;
+	background-color: rgb(255, 255, 255);
+	color:rgb(32, 30, 30);
+	box-shadow: 4px 0px 10px rgb(129, 103, 103);
+    /* opacity: 0;
+    transition: opacity 0.35s; */
 }
 .row1{
 	position: relative;
+    margin-bottom: -337px;
 }
 .row2{
 	 position: relative;
-	left:9%;
+	left:8.1%;
 }
 
 /* Common style */
@@ -103,7 +120,7 @@ section {
 	position: relative;
 	float: left;
     overflow: hidden;
-    margin: 10px 1%;
+	margin: 44px 1%;
     min-width: 170px;
     max-width: 275px;
     max-height: 285px;
@@ -113,6 +130,8 @@ section {
     background: #3085a3;
 	text-align: center;
 	cursor: pointer;
+	box-shadow: 5px 5px 10px rgb(77, 44, 44);
+
 }
 
 .grid figure img {
@@ -121,11 +140,37 @@ section {
 	min-height: 100%;
 	max-width: 100%;
 	opacity: 0.8;
-	border-radius: 15px 50px !important;
 }
 
+.sourabhImg{
+	position: relative;
+	bottom: 38px;
+	transform: scale(1,1)!important;
+}
+.sarthakImg{
+	position: relative;
+    top: 121px;
+    left: 35px;
+    transform: scale(1.6,1.6)!important;
+}
+.abhinavImg{
+    position: relative;
+    transform: scale(1.7,1.7)!important;
+	top: 17px;
+	
+}
+.vikasImg{
+	position: relative;
+    top: 110px;
+    transform: scale(1.6,1.6)!important;
+}
+.sparshImg{
+	position: relative;
+	top: 0px;
+	transform: scale(1,1)!important;
+}
 .grid figure figcaption {
-	padding: 2em;
+	padding: 0em;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 1.25em;
@@ -218,7 +263,8 @@ figure.effect-apollo .attribute {
 }
 figure.effect-apollo ul {
 	position: relative;
-	right: 15%;
+	right: 11%;
+	bottom:20px!important;
 	color:white !important;
 	margin: 80% -40%;
     padding: 0;
@@ -285,27 +331,72 @@ figure.effect-apollo:hover figcaption::before {
 	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
 }
 
-figure.effect-apollo:hover p{
+/* figure.effect-apollo:hover p{
 	opacity: 1;
 	-webkit-transition-delay: 0.1s;
 	transition-delay: 0.1s;
-}
+} */
 figure.effect-apollo:hover ul{
 	opacity: 1;
 	-webkit-transition-delay: 0.1s;
 	transition-delay: 0.1s;
 }
 
-.name{
-    position: relative;
-    right:50px;
-    bottom:40px;
-    opacity: 0;
-    transition: opacity 0.35s;
 
-}
 
 @media screen and (max-width: 25em) {
+	
+	.inventory-body {
+		min-width: 100%;
+		min-height: 100%;
+		position: relative;
+		bottom:0px;
+		}
+	p.name{
+		display: inline-block;
+		position: relative;
+		padding: 7px;
+		height: 25px;
+		width: 100%;
+		bottom: 100px;
+	
+		font-size: 12px!important;
+		background-color: rgb(255, 255, 255);
+		color:rgb(32, 30, 30);
+		/* opacity: 0;
+		transition: opacity 0.35s; */
+	}
+	.grid figure {
+		height: 234px;
+	}
+	.sourabhImg{
+		position: relative;
+		bottom: 0px;
+		transform: scale(1,1)!important;
+	}
+	.sarthakImg{
+		position: relative;
+		top: 73px;
+		left: 35px;
+		transform: scale(1.6,1.6)!important;
+	}
+	.abhinavImg{
+		position: relative;
+		transform: scale(1.7,1.7)!important;
+		top: 17px;
+		
+	}
+	.vikasImg{
+		position: relative;
+		top: 68px;
+		transform: scale(1.6,1.6)!important;
+	}
+	.sparshImg{
+		position: relative;
+		top: 0px;
+		transform: scale(1,1)!important;
+	}
+	
 	.grid{
 		position: relative;
 		clear: both;
@@ -317,12 +408,14 @@ figure.effect-apollo:hover ul{
 		text-align: center;
 	}
 	.fa{
-		padding: 7px;
-		width: 28px;
-		height: 28px;
-		text-align: center;
-		text-decoration: none;
-		border-radius: 50%;
+		padding: 5px;
+		width: 32px;
+		height: 32px;
+		}
+	figure.effect-apollo ul {
+		position: relative;
+		right: 3%;
+		bottom:-32px!important;
 	}
 	ul li a{
 		font-size:.6em;
@@ -333,4 +426,18 @@ figure.effect-apollo:hover ul{
     .row{
 		position: relative;
 		bottom: 52px;	}
+	.row2{
+			position: relative;
+		   left:0px;
+		   bottom: 135px;
+	   }
+	  .responsive{
+		margin-bottom: -344px;
+    position: relative;
+    bottom: 0px;
+    left: 0;
+	  }
+	  .footer-bottom{
+		  display: none;
+	  }
 }

@@ -33,6 +33,16 @@
   }
   
   @media screen and (max-width: 25em) {
+    h1{
+      text-align: center;
+      font-family: montserrat-bold,sans-serif;
+      font-size: 1.2rem!important;
+      color: #220505;
+      text-transform: uppercase;
+      letter-spacing: .3rem;
+      position: relative;
+      bottom: -45px;
+      }
     .card{
       margin-top: 27%;
       height: 393px;

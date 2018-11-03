@@ -12,6 +12,8 @@
           <path class="a1" d="M0,20l15,16l15-16"></path>
         </svg>
       </span></a>
+    <span class="news fadeInRight animated delay-3" (click)='openDialog(newsContent)'>Latest News</span>
+      
 </div>
 
   <section id="about">
@@ -138,27 +140,49 @@
         
                     </div>
                     <!-- end row -->
-        
+                    <span class="bug fadeInRight animated delay-3" (click)='openDialog(bugContent)'><i class="fa fa-bug"></i></span>
+
                 </div>
                 <!-- end footer-main -->
+                <app-footer class="mt-auto"></app-footer>
+
+                
         
-                <div class="footer-bottom">
-        
-                    <div class="row">
-        
-                        <div class="col-twelve">
-                            <div class="copyright">
-                                <span>With <i class="fa fa-heart" style="color:red"></i> from
-                                    <a href="">E-Cell, IET DAVV</a>
-                                </span>
-                            </div>
-                        </div>
           
-                    </div>
-                
-                </div>
-                <!-- end footer-bottom -->
-        
-                
         
             </footer>
+                
+            <ng-template #newsContent let-c="close" let-d="dismiss">
+                <div class="modal-header">
+                  <p style="color:black;text-align: center" mat-dialog-title> Latest News </p>
+                  <span type="button" class="close" aria-label="Close" (click)="cross_click()">
+                    <span aria-hidden="true">&times;</span>
+                                </span>
+                            </div>
+                <div class="modal-body">
+                  <div *ngFor="let event of events;let i = index">
+                     <b> <p>{{ i+1 }}. {{ event }}</p></b>
+                </div></div>
+                
+              </ng-template>
+              
+              <ng-template #bugContent let-c="close" let-d="dismiss">
+                <div class="modal-header">
+                  <p style="color:black;text-align: center" mat-dialog-title> OPEN SOURCE </p>
+                  <span type="button" class="close" aria-label="Close" (click)="cross_click()">
+                    <span aria-hidden="true">&times;</span>
+                                </span>
+                            </div>
+                <div class="modal-body">
+                  <p style="letter-spacing: .4px;
+                  word-spacing: 3px;
+                  line-height: 45px; text-align: center"><b>Hey there buddy! If you have found any kind of bugs in our site then you are more than welcome to show up to our 
+                      <a target="_blank" href="https://github.com/SarthakSri98/E-Cell-IET-DAVV">repository</a> on github and contribute.</b>
+
+                  </p>  
+                </div>
+                
+              </ng-template> 
+        
+                
+        
