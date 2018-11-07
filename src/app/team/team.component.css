@@ -70,7 +70,6 @@ section {
     font-family: montserrat-bold,sans-serif;
 	position: relative;
 	bottom:2px;
-	left:13px;
     text-transform: uppercase;
 	letter-spacing: .3rem;
 	
@@ -113,6 +112,8 @@ p.name{
 .row2{
 	 position: relative;
 	left:8.1%;
+	bottom: 364px;
+    margin-bottom: -30%;
 }
 
 /* Common style */
@@ -344,7 +345,7 @@ figure.effect-apollo:hover ul{
 
 
 
-@media screen and (max-width: 25em) {
+@media screen and (max-width: 45em) {
 	
 	.inventory-body {
 		min-width: 100%;
@@ -400,7 +401,7 @@ figure.effect-apollo:hover ul{
 	.grid{
 		position: relative;
 		clear: both;
-		margin-left: 83px;
+		margin-left: 19%;
 		padding: 0px 0 -0.5em;
 		margin-bottom: 236px;
 		max-width: 1000px;
@@ -408,7 +409,7 @@ figure.effect-apollo:hover ul{
 		text-align: center;
 	}
 	.fa{
-		padding: 5px;
+		padding: 7px;
 		width: 32px;
 		height: 32px;
 		}
@@ -429,7 +430,9 @@ figure.effect-apollo:hover ul{
 	.row2{
 			position: relative;
 		   left:0px;
-		   bottom: 135px;
+		   bottom: 441px;
+    margin-bottom: -187%;
+
 	   }
 	  .responsive{
 		margin-bottom: -344px;

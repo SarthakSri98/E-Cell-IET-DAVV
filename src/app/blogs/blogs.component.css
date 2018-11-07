@@ -27,7 +27,7 @@
     text-align: center;
   }
   
-  @media screen and (max-width: 25em) {
+  @media screen and (max-width: 45em) {
     .card{
       margin-top: 27%;
       height: 393px;
@@ -43,5 +43,7 @@
     }
     .eventsSection{
       margin-left: 8%;
+      margin-bottom: 1138px;
+
     }
   }

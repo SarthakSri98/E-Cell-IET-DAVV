@@ -32,7 +32,7 @@
     text-align: center;
   }
   
-  @media screen and (max-width: 25em) {
+  @media screen and (max-width: 45em) {
     h1{
       text-align: center;
       font-family: montserrat-bold,sans-serif;

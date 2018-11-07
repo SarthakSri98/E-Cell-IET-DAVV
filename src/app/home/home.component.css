@@ -282,7 +282,7 @@ footer {
 .footer-main li,p{
     list-style-type: none;
     color:rgb(56, 51, 51);
-    font-size: .6rem;
+    font-size: .5rem;
 }
 .footer-about{
     font-family: montserrat-bold,sans-serif;
@@ -364,17 +364,20 @@ input[type="email"]
     -ms-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
-@media screen and (max-width: 25em) {
+@media screen and (max-width: 45em) {
+    .section-intro h1 {
+        font-size: 1.2rem;
+    }
     .whatWeDoContent{
-        max-width: 83%;
-        text-align: center;
+        max-width: 74%;
+        font-size: 0.6em;
+        margin-left: 13%;
+            text-align: center;
         letter-spacing: .4px;
         word-spacing: 3px;
         line-height: 45px;
         color: #b6a5a5;
-        margin-left: 9%;
         position: relative;
-        font-size: .7rem;
 }
     .slogan {
         font-size: .5rem;
@@ -396,9 +399,10 @@ input[type="email"]
       display:none;
   }
   .aboutContent{
-    max-width: 86%;
-    font-size: 0.7em;
-    margin-left: 7%;
+    max-width: 74%;
+    font-size: 0.6em;
+    margin-left: 13%;
+
     position: relative;
     top: 29px;
 }
@@ -419,7 +423,7 @@ input[type="email"]
 }
 .list-links{
     position: relative;
-    right:7%;
+    right:9%;
 }
 
 .footer-subscribe{
@@ -431,12 +435,19 @@ input[type="email"]
     text-align: center;
 }
 
+.bug{
+    display: none;
+}
 
 
 .footer-bottom {
     margin-top: 1rem;
     text-align: center;
     font-size: 1.4rem;
+}
+.section-intro h3 img{
+    height: 20%;
+    width: 24%;
 }
 
 }

@@ -368,9 +368,20 @@ button:hover {
 		text-align: center;
 	}
     .sidenav-button{
-		top: 0px;
-		position: fixed !important;
-		left: 5%!important;	}
+		top: -12px;
+    position: fixed !important;
+    left: -4%!important;
+		}
+
+
+		.sidenav-button span{
+			    top: -6px !important;
+    margin-bottom: 5px !important;
+    width: 25px!important;
+    position: relative !important;
+    height: 5px!important;
+
+		}
 	.column p {
 		font-size: 1.5em;
 	}
@@ -384,18 +395,4 @@ button:hover {
 	}
 }
 
-@media screen and (max-width: 25em) {
 
-	.codrops-header {
-		font-size: 80%;
-	}
-
-	.codrops-top {
-		font-size: 120%;
-	}
-
-	.codrops-icon span {
-		display: none;
-	}
-
-}

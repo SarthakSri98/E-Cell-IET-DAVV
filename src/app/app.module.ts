@@ -51,7 +51,6 @@ import { BlogsComponent } from './blogs/blogs.component';
 import { GithubProfilesComponent } from './github-profiles/github-profiles.component';
 import { CompetitiveComponent } from './competitive/competitive.component';
 import { FooterComponent } from './footer/footer.component';
-import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 @NgModule({
   declarations: [
@@ -105,7 +104,6 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
-    AnimateOnScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

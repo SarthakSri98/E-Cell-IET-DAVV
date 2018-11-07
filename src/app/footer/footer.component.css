@@ -51,7 +51,7 @@
     
 }
 
-@media screen and (max-width: 25em) {
+@media screen and (max-width: 45em) {
   .copyright{
     bottom:0px;
     font-size: .5rem;
