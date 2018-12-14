@@ -44,6 +44,7 @@ import {
   MatTooltipModule,
   MatTreeModule,
 } from '@angular/material';
+
 import { GalleryComponent } from './gallery/gallery.component';
 import { EventsComponent } from './events/events.component';
 import { StuffsComponent } from './stuffs/stuffs.component';
@@ -51,6 +52,8 @@ import { BlogsComponent } from './blogs/blogs.component';
 import { GithubProfilesComponent } from './github-profiles/github-profiles.component';
 import { CompetitiveComponent } from './competitive/competitive.component';
 import { FooterComponent } from './footer/footer.component';
+import { FacultyComponent } from './faculty/faculty.component';
+import { StudentComponent } from './student/student.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +66,9 @@ import { FooterComponent } from './footer/footer.component';
     BlogsComponent,
     GithubProfilesComponent,
     CompetitiveComponent,
-    FooterComponent
+    FooterComponent,
+    FacultyComponent,
+    StudentComponent
   ],
   imports: [
     BrowserModule,

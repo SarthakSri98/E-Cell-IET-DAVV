@@ -6,7 +6,7 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
   styleUrls: ['./team.component.css']
 })
 export class TeamComponent implements OnInit {
-
+  mode = "faculty";
   constructor(private renderer: Renderer2) {
     // this.renderer.setStyle(document.body, 'background-color', 'yellow');
 
@@ -15,4 +15,13 @@ export class TeamComponent implements OnInit {
   ngOnInit() {
   }
 
+  toggleFaculty()
+  {
+    this.mode="faculty";
+  }
+
+  toggleStudent()
+  {
+    this.mode="student";
+  }
 }

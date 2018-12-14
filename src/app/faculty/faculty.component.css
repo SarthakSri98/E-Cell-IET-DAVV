@@ -31,10 +31,7 @@ a {
 	color: #3498db;
 	text-decoration: none;
 }
-mat-button-toggle-group
-{
-	margin-left:45%;
-}
+
 a:hover, a:focus {
 	color: #528cb3;
 }
@@ -82,7 +79,7 @@ section {
 	clear: both;
     margin: -39px auto;
     padding: 0px 0 10.5em;
-    margin-bottom: 120px;
+    margin-bottom: -200px;
     max-width: 1000px;
 	list-style: none;
 	text-align: center;
@@ -97,10 +94,10 @@ section {
 p.name{
 	display: inline-block;
     position: relative;
-    padding: 7px;
+    padding: 4px;
     height: 32px;
     width: 100%;
-	bottom: 232px;
+    bottom: 234px;
     font-size: 16px!important;
 	background-color: rgb(255, 255, 255);
 	color:rgb(32, 30, 30);

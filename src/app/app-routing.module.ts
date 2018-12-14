@@ -9,6 +9,8 @@ import { StuffsComponent } from './stuffs/stuffs.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { GithubProfilesComponent } from './github-profiles/github-profiles.component';
 import { CompetitiveComponent } from './competitive/competitive.component';
+import { FacultyComponent } from './faculty/faculty.component';
+import { StudentComponent } from './student/student.component';
 
 const route:Routes=[
   { path:'',component:HomeComponent },
@@ -19,6 +21,8 @@ const route:Routes=[
   { path:'stuffs/blogs',component: BlogsComponent },
   { path:'stuffs/github',component: GithubProfilesComponent },
   { path:'stuffs/competitive',component: CompetitiveComponent },
+  { path:'team/faculty',component:FacultyComponent  },
+  { path:'team/student',component: StudentComponent },
 
 ]
 

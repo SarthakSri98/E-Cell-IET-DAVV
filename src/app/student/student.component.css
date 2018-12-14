@@ -31,10 +31,7 @@ a {
 	color: #3498db;
 	text-decoration: none;
 }
-mat-button-toggle-group
-{
-	margin-left:45%;
-}
+
 a:hover, a:focus {
 	color: #528cb3;
 }
