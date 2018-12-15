@@ -77,7 +77,7 @@ section {
 	letter-spacing: .3rem;
 	
 }
-.grid {
+.grid{
 	position: relative;
 	clear: both;
     margin: -39px auto;
@@ -348,7 +348,7 @@ figure.effect-apollo:hover ul{
 
 
 
-@media screen and (max-width: 45em) {
+@media screen and (max-width: 55em) {
 	
 	.inventory-body {
 		min-width: 100%;
@@ -395,6 +395,7 @@ figure.effect-apollo:hover ul{
 		top: 68px;
 		transform: scale(1.6,1.6)!important;
 	}
+
 	.sparshImg{
 		position: relative;
 		top: 0px;
@@ -406,44 +407,56 @@ figure.effect-apollo:hover ul{
 		clear: both;
 		margin-left: 19%;
 		padding: 0px 0 -0.5em;
-		margin-bottom: 236px;
-		max-width: 1000px;
-		list-style: none;
-		text-align: center;
+		margin-bottom: -200px!important;
 	}
+
 	.fa{
 		padding: 7px;
 		width: 32px;
 		height: 32px;
 		}
+
 	figure.effect-apollo ul {
 		position: relative;
 		right: 3%;
 		bottom:-32px!important;
 	}
+
 	ul li a{
 		font-size:.6em;
 	}
+
 	li{
 		padding-left:2px;
 	}
+
     .row{
 		position: relative;
-		bottom: 52px;	}
+		bottom: 52px;	
+	}
+
 	.row2{
 			position: relative;
 		   left:0px;
 		   bottom: 441px;
-    margin-bottom: -187%;
+           margin-bottom: -187%;
 
 	   }
-	  .responsive{
+	
+	.responsive{
 		margin-bottom: -344px;
-    position: relative;
-    bottom: 0px;
-    left: 0;
+        position: relative;
+        bottom: 0px;
+        left: 0;
 	  }
-	  .footer-bottom{
+
+    .footer-bottom{
 		  display: none;
 	  }
+
+	  mat-button-toggle-group
+{
+	margin-left:25%;
+}
+
 }

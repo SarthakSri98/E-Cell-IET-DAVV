@@ -77,7 +77,7 @@ section {
 .grid {
 	position: relative;
 	clear: both;
-    margin: -39px auto;
+    margin: 44px auto;
     padding: 0px 0 10.5em;
     margin-bottom: 120px;
     max-width: 1000px;
@@ -409,7 +409,7 @@ figure.effect-apollo:hover ul{
 		text-align: center;
 	}
 	.fa{
-		padding: 7px;
+		padding: 10px;
 		width: 32px;
 		height: 32px;
 		}
@@ -429,7 +429,8 @@ figure.effect-apollo:hover ul{
 		bottom: 52px;	}
 	.row2{
 			position: relative;
-		   left:0px;
+		   left:12.1%;
+
 		   bottom: 441px;
     margin-bottom: -187%;
 
