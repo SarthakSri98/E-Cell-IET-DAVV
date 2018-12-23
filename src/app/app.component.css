@@ -3,6 +3,14 @@
     display: inline-block;
     cursor: pointer;
 }
+
+.logo{
+	top: 34px;
+    position: relative;
+    height: 54px;
+    width: 63px;
+}
+
 .sidenav-button{
     position: fixed!important;
     left: 2%;
@@ -360,6 +368,10 @@ button:hover {
 
 @media screen and (max-width: 46.0625em) {
 
+	.st-menu li{
+		font-size: 15px;
+	}
+
 	.column {
 		width: 100%;
 		min-width: auto;
@@ -393,6 +405,9 @@ button:hover {
     .footer-bottom{
 		font-size: 1.5rem;
 	}
+	#nav-icon1 span:nth-child(1) {
+		top: 14px!important;
+	  }
 }
 
 

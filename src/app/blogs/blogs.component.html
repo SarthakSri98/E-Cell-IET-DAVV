@@ -1,9 +1,19 @@
-<button mat-raised-button (click)="backToStuff()" class="backToStuff" color="primary"><i class="fa fa-chevron-left"></i>&nbsp;Back to stuffs</button>
+<!-- <button mat-raised-button (click)="backToStuff()" class="backToStuff" color="primary"><i class="fa fa-chevron-left"></i>&nbsp;Back to stuffs</button> -->
+<h1 class="heading">Blogs</h1>
 
 <div class="eventsSection mat-typography">
-  <div class="card" *ngFor="let blog of blogList">
+  <div class="card" *ngFor="let blog of blogList;let i=index" (click)="openDialog(blogContent,i)">
      <img [src]="blog.img">
      <p class="mat-title">{{blog.eventName}}</p>
      <p class="mat-subheading-1">{{ blog.description }}</p>
   </div>
   </div>
+
+  <ng-template #blogContent let-c="close" let-d="dismiss">
+      <div class="modal-header">
+        <h2 class="modal-heading">{{ blogList[index].eventName }}</h2>
+                  </div>
+      <div class="modal-body" id="content" [innerHTML]="blogList[index].eventDescription" >
+        </div>
+      
+    </ng-template> 

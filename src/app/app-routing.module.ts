@@ -18,7 +18,7 @@ const route:Routes=[
   { path:'gallery',component:GalleryComponent },
   { path:'events',component: EventsComponent },
   { path:'stuffs',component: StuffsComponent},
-  { path:'stuffs/blogs',component: BlogsComponent },
+  { path:'blogs',component: BlogsComponent },
   { path:'stuffs/github',component: GithubProfilesComponent },
   { path:'stuffs/competitive',component: CompetitiveComponent },
   { path:'team/faculty',component:FacultyComponent  },
