@@ -1,9 +1,10 @@
 .eventsSection{
   margin-left:25%;
+  margin-top:-176px;
 }
 .card{
-  margin-top:-176px;
-  height: 354px;
+  margin-top: 60px;
+  height: auto;
   width:396px;
   background-color: rgb(252, 249, 249);
   float:left;
